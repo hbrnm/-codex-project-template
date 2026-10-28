@@ -36,6 +36,13 @@ Adaptări:
 - Nu se aplică automat actualizări de dependențe sau instalări globale.
 - AGENTS.md și documentația sunt adaptate scopului acestui template.
 
+## Evoluția template-ului
+Versiunea extinsă combină aceste proceduri cu alte surse. Această pagină
+păstrează istoricul inițial ECC; pentru componența curentă, vezi
+[SOURCES.md](SOURCES.md) și [registrul](../skills.registry.json).
+Planificarea, testarea, standardele și verificarea au fost rescrise pentru
+politica comună. Nu mai este un template exclusiv ECC.
+
 ## Compatibilitate
 Fișierele au metadate name, description și license. Descoperirea nativă,
 instrumentele și eventualele interfețe de activare depind de mediul Codex.

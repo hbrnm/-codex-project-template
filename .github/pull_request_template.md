@@ -1,13 +1,13 @@
 ## Rezultat
-Ce problemă rezolvă și cum se comportă proiectul după schimbare?
+Problema și comportamentul observabil după schimbare.
 
 ## Modificări
-- 
+Fișierele importante și legătura lor cu cererea. Justifică dependențele și schimbările transversale.
 
 ## Verificări
-Comenzi executate și rezultate; marchează separat verificările neexecutate sau inaplicabile.
-- 
+Comanda sau metoda, rezultatul real și limita.
+Marchează separat: Trecut / Eșuat / Neexecutat / Nu se aplică.
 
-## Limitări
-Riscuri relevante, verificări manuale rămase și eventuale configurări necesare.
-- 
+## Limitări și configurare
+Riscuri relevante, verificări manuale rămase și configurări necesare.
+Pentru surse noi: commit, licență, adaptări și notificări păstrate.

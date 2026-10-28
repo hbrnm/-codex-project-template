@@ -1,61 +1,100 @@
-# Template pentru proiecte cu Codex Cloud
+# Template modular pentru Codex Cloud
 
-Bază pentru proiecte noi, cu reguli și cinci skilluri adaptate din ECC.
+Reguli în română și 13 skilluri autonome pentru proiecte noi.
+Combină selectiv ECC cu surse comunitare verificate, păstrând o politică comună.
 Nu conține încă o aplicație și nu presupune o tehnologie.
 
-## Creează un proiect
-1. În acest repository, activează Settings → General → Template repository.
-2. Folosește Use this template → Create a new repository.
-3. Acordă conexiunii GitHub acces la noul repository și selectează-l în Codex Cloud.
-4. Cere completarea [brief-ului](docs/PROJECT-BRIEF.md), apoi alegerea tehnologiei.
-5. După implementarea inițială, completează tabelul comenzilor de mai jos.
-   Configurează separat mediul Cloud, secretele și integrările fiecărui proiect.
+## Începe de pe telefon
+1. Activează Settings → General → Template repository în GitHub, dacă nu este activ.
+2. Alege Use this template → Create a new repository.
+3. Acordă conexiunii GitHub acces la noul repository și deschide-l în Codex Cloud.
+4. Pornește o sarcină cu mesajul de mai jos.
+5. După alegerea tehnologiei, configurează mediul și completează comenzile reale.
 
-Exemplu de prim mesaj:
+> Citește AGENTS.md și docs/PROJECT-BRIEF.md. Vreau să construiesc [descriere].
+> Folosește requirements pentru informațiile lipsă, apoi project-planning.
+> Selectează numai procedurile relevante și implementează prima funcție verificabilă.
+> Explică ce ai verificat și ce rămâne neconfirmat.
 
-> Citește AGENTS.md și docs/PROJECT-BRIEF.md. Vreau o aplicație pentru [scop].
-> Ajută-mă să completez cerințele, propune tehnologia și implementează prima
-> funcție verificabilă. Documentează comenzile reale și verificările executate.
+## Cum sunt evitate contradicțiile
+[AGENTS.md](AGENTS.md) definește politica comună.
+[WORKFLOW.md](docs/WORKFLOW.md) distribuie responsabilitățile între etape.
+[CONFLICT-RESOLUTION.md](docs/CONFLICT-RESOLUTION.md) documentează alegerile dintre
+surse: teste proporționale riscului, schimbare minimă completă, stilul proiectului
+prioritar și instrumente externe opționale.
 
-## Ce este inclus
-- [AGENTS.md](AGENTS.md): instrucțiuni generale pentru lucru și comunicare în română.
-- [coding-standards](.agents/skills/coding-standards/SKILL.md): claritate și convenții.
-- [project-planning](.agents/skills/project-planning/SKILL.md): planificare în conversație.
-- [tdd-workflow](.agents/skills/tdd-workflow/SKILL.md): teste pentru comportament.
-- [security-review](.agents/skills/security-review/SKILL.md): verificări de securitate.
-- [verification-loop](.agents/skills/verification-loop/SKILL.md): dovezi înainte de finalizare.
-- [Șablon PR](.github/pull_request_template.md) și [proveniența ECC](docs/ECC-SOURCE.md).
+## Skilluri
+| Skill | Responsabilitate |
+|---|---|
+| [coding-standards](.agents/skills/coding-standards/SKILL.md) | Claritate și cea mai mică schimbare completă |
+| [project-planning](.agents/skills/project-planning/SKILL.md) | Planificare incrementală |
+| [tdd-workflow](.agents/skills/tdd-workflow/SKILL.md) | Teste pe comportament |
+| [security-review](.agents/skills/security-review/SKILL.md) | Review de securitate |
+| [verification-loop](.agents/skills/verification-loop/SKILL.md) | Dovezi înainte de finalizare |
+| [requirements](.agents/skills/requirements/SKILL.md) | Cerințe și criterii de acceptare |
+| [debugging](.agents/skills/debugging/SKILL.md) | Depanare bazată pe dovezi |
+| [code-review](.agents/skills/code-review/SKILL.md) | Review pe cinci dimensiuni |
+| [ui-design](.agents/skills/ui-design/SKILL.md) | Design coerent și verificabil |
+| [diagramming](.agents/skills/diagramming/SKILL.md) | Diagrame cu semantică verificabilă |
+| [clear-writing](.agents/skills/clear-writing/SKILL.md) | Redactare clară cu păstrarea faptelor |
+| [skill-authoring](.agents/skills/skill-authoring/SKILL.md) | Skilluri cu scop și evaluare |
+| [architecture-analysis](.agents/skills/architecture-analysis/SKILL.md) | Analiza sistemelor din dovezi |
 
-## Verifică disponibilitatea skillurilor
-Pornește o sarcină nouă după integrarea fișierelor și cere:
+Registrul verificabil este [skills.registry.json](skills.registry.json).
+Selectează un skill principal și consultă altele numai când sunt relevante.
 
-> Citește AGENTS.md. Identifică skillurile descoperite nativ din .agents/skills/.
-> Distinge skillurile oferite de mediu de fișierele pe care le poți doar citi.
-> Citește explicit skillul verification-loop și explică ce verificări se aplică acum.
+## Documente de proiect
+- [Brief](docs/PROJECT-BRIEF.md): rezultat, utilizatori și criterii de acceptare.
+- [Brief vizual](docs/DESIGN-BRIEF.md): numai pentru proiecte cu UI.
+- [Handoff](docs/HANDOFF.md): continuitate între sesiuni, fără secrete.
+- [Șablon ADR](docs/ADR-TEMPLATE.md): decizii importante, când sunt necesare.
+- [Șablon PR](.github/pull_request_template.md): rezultat, dovezi și limite.
+- [Integrări opționale](docs/OPTIONAL-INTEGRATIONS.md): ce nu este instalat.
 
-Fișierele sunt în format SKILL.md cu metadate name și description.
-Încărcarea efectivă depinde de versiunea și configurația Codex.
-Dacă nu există descoperire nativă, cere citirea explicită a fișierului relevant.
-Citirea manuală nu confirmă instalarea ca plugin.
+## Validarea template-ului
+Necesită Python 3.10+; folosește numai biblioteca standard, fără instalare de pachete.
 
-## Comenzi ale aplicației
-Nu există comenzi de aplicație până la alegerea tehnologiei.
-Înlocuiește „Nedefinit” cu comenzi verificate și documentează versiunea runtime-ului.
+```bash
+python3 scripts/validate_template.py
+python3 -m unittest discover -s tests -v
+```
+
+Validatorul verifică structura, metadatele, registrul, sursele fixate, licențele
+înregistrate și linkurile locale. Testele verifică și respingerea unor configurații
+defecte. Aceste verificări nu demonstrează absența tuturor contradicțiilor semantice.
+
+[Raportul integrării](docs/REVIEW-REPORT.md) consemnează verificările executate și limitele.
+
+[Scenariile din evals](evals/README.md) verifică selecția și conflictele în sesiuni
+reale de agent. Nu sunt prezentate ca rezultate runtime deja obținute.
+
+## Descoperirea în Codex Cloud
+Pornește o sarcină nouă după integrare și cere:
+
+> Citește AGENTS.md. Distinge skillurile descoperite nativ de fișierele pe care
+> le poți doar citi. Citește explicit verification-loop dacă nu este disponibil nativ.
+
+Formatul SKILL.md nu garantează descoperirea în fiecare interfață.
+Citirea explicită este alternativa manuală; nu dovedește instalarea unui plugin.
+Template-ul nu activează MCP, hookuri, subagenți, servicii sau programări.
+
+## Comenzi ale viitoarei aplicații
+Acestea sunt separate de comenzile validatorului de template.
 
 | Operație | Comandă | Stare |
 |---|---|---|
 | Instalare | Nedefinit | Tehnologie nealeasă |
 | Pornire | Nedefinit | Tehnologie nealeasă |
 | Build | Nedefinit | Tehnologie nealeasă |
-| Teste | Nedefinit | Tehnologie nealeasă |
-| Lint / formatare | Nedefinit | Tehnologie nealeasă |
-| Verificare tipuri | Nedefinit | Tehnologie nealeasă |
+| Teste aplicație | Nedefinit | Tehnologie nealeasă |
+| Lint / tipuri | Nedefinit | Tehnologie nealeasă |
 
-Nu sunt configurate CI, publicare, hookuri, MCP sau subagenți.
-Template-ul copiază fișiere, nu setările Cloud sau secretele.
-Procedurile sunt instrucțiuni, nu mecanisme care impun automat verificările.
+Completează versiunile runtime-ului și comenzile după alegerea tehnologiei.
+Secretele și configurațiile Cloud se gestionează separat pentru fiecare proiect.
+Nu este configurată publicarea sau o suită CI de aplicație.
 
-## Proveniență și licență
-Skillurile sunt adaptări documentate din ECC, nu o instalare completă ECC.
-Notificarea MIT pentru materialele ECC se păstrează în [licența sursei](licenses/ECC-MIT.txt).
-Vezi [sursele și actualizarea](docs/ECC-SOURCE.md).
+## Surse și licențe
+Vezi [selecția tuturor surselor](docs/SOURCES.md), [commituri și decizii](sources.lock.json)
+și [notificările terților](THIRD-PARTY-NOTICES.md).
+Contribuțiile originale sunt MIT; componentele adaptate își păstrează licențele
+indicate în skilluri și notificări. [Istoricul ECC](docs/ECC-SOURCE.md) rămâne disponibil.

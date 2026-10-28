@@ -1,33 +1,30 @@
 ---
 name: security-review
-description: "Folosește la autentificare, autorizare, date personale, secrete, input extern, API-uri, uploaduri și plăți."
-license: MIT
+description: "Folosește la autentificare, autorizare, date sensibile, input extern, API-uri, uploaduri și plăți."
+license: "MIT"
 ---
 
 # Review de securitate
 
-Adaptare din ECC; vezi [proveniența](../../../docs/ECC-SOURCE.md).
+Adaptare modificată în română, 2026-10-28. Surse: ecc.
+Vezi [proveniența și licențele](../../../docs/SOURCES.md).
+Se aplică [politica comună](../../../AGENTS.md); acest skill nu o înlocuiește.
 
-1. Identifică datele sensibile, actorii și granițele de încredere ale schimbării.
-2. Verifică secretele: fără valori în cod, exemple, loguri sau rezultate de tool.
-   Folosește numele variabilelor și setările dedicate ale mediului.
-3. Validează datele pe server: tip, dimensiune, format și limite potrivite.
-4. Verifică autentificarea și autorizarea pe fiecare operație sensibilă,
-   inclusiv accesul la resursele altor utilizatori.
-5. Folosește interogări parametrizate; evită interpolarea inputului în SQL,
-   comenzi shell, căi și URL-uri. Verifică SSRF și traversarea directoarelor
-   unde sunt relevante.
-6. Pentru web, verifică escaping-ul, HTML-ul introdus de utilizator, sesiunile,
-   cookie-urile, CSRF și CORS conform modelului de autentificare ales.
-7. Pentru uploaduri, verifică dimensiunea, conținutul, destinația și permisiunile.
-8. Pentru plăți și webhookuri, verifică semnătura, suma, actorul și idempotenta.
-9. Evită expunerea datelor în erori și loguri. Aplică limite operațiilor costisitoare.
-10. Folosește auditul de dependențe existent, când este disponibil.
-    Evaluează rezultatele; nu rula automat actualizări sau remedieri în masă.
+1. Identifică actorii, datele sensibile și granițele de încredere ale schimbării.
+2. Verifică secretele: fără valori reale în cod, exemple, loguri și răspunsuri.
+3. Validează inputul pe server: tip, format, dimensiune și limite.
+4. Verifică autorizarea la fiecare operație sensibilă și accesul între utilizatori.
+5. Folosește interogări parametrizate. Verifică interpolarea în shell, căi și URL-uri,
+   inclusiv SSRF și traversarea directoarelor unde sunt relevante.
+6. Pentru web, verifică escaping, HTML extern, sesiuni, cookie-uri, CSRF și CORS
+   potrivit modelului de autentificare, fără a impune mecanisme inaplicabile.
+7. Pentru fișiere, verifică dimensiunea, conținutul, destinația și permisiunile.
+8. Pentru plăți și webhookuri, verifică semnătura, actorul, suma și idempotenta.
+9. Evită expunerea datelor în erori și loguri; limitează operațiile costisitoare.
+10. Rulează auditul existent când este disponibil. Nu aplica automat actualizări
+    sau remedieri în masă ale dependențelor.
 
-Adaugă teste pentru acces neautorizat, input invalid și cazurile sensibile
-atinse de schimbare. Nu testa sisteme externe fără autorizare.
-
-Raportează fiecare constatare cu severitate, fișier, impact și remediere.
-Marchează verificările inaplicabile. O căutare după șiruri nu este un audit complet.
-Nu declara „fără vulnerabilități” pe baza unei verificări parțiale.
+Adaugă teste relevante pentru acces neautorizat și input invalid. Nu testa sisteme
+externe în afara autorizării. Raportează severitate, locație, impact și remediere.
+O căutare după șiruri nu este un audit complet; nu declara absența tuturor
+vulnerabilităților după o verificare parțială.

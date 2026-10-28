@@ -11,3 +11,7 @@
 Thumbs.db
 
 # Adaugă regulile tehnologiei după alegerea ei.
+
+# Verificările Python ale template-ului
+__pycache__/
+*.py[cod]

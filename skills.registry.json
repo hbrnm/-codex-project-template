@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "policy": "AGENTS.md",
+  "skills": [
+    {
+      "name": "coding-standards",
+      "path": ".agents/skills/coding-standards/SKILL.md",
+      "phase": "implementare",
+      "source_ids": [
+        "ecc",
+        "ponytail"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "project-planning",
+      "path": ".agents/skills/project-planning/SKILL.md",
+      "phase": "planificare",
+      "source_ids": [
+        "ecc",
+        "addy",
+        "matt",
+        "paperclip"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "tdd-workflow",
+      "path": ".agents/skills/tdd-workflow/SKILL.md",
+      "phase": "implementare",
+      "source_ids": [
+        "ecc",
+        "matt",
+        "ponytail"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "security-review",
+      "path": ".agents/skills/security-review/SKILL.md",
+      "phase": "verificare",
+      "source_ids": [
+        "ecc"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "verification-loop",
+      "path": ".agents/skills/verification-loop/SKILL.md",
+      "phase": "verificare",
+      "source_ids": [
+        "ecc",
+        "llm-apps"
+      ],
+      "license": "MIT AND Apache-2.0"
+    },
+    {
+      "name": "requirements",
+      "path": ".agents/skills/requirements/SKILL.md",
+      "phase": "definire",
+      "source_ids": [
+        "matt",
+        "addy"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "debugging",
+      "path": ".agents/skills/debugging/SKILL.md",
+      "phase": "investigare",
+      "source_ids": [
+        "addy",
+        "rea"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "code-review",
+      "path": ".agents/skills/code-review/SKILL.md",
+      "phase": "verificare",
+      "source_ids": [
+        "addy",
+        "ponytail",
+        "matt"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "ui-design",
+      "path": ".agents/skills/ui-design/SKILL.md",
+      "phase": "design",
+      "source_ids": [
+        "anthropic",
+        "open-design",
+        "taste"
+      ],
+      "license": "MIT AND Apache-2.0"
+    },
+    {
+      "name": "diagramming",
+      "path": ".agents/skills/diagramming/SKILL.md",
+      "phase": "documentare",
+      "source_ids": [
+        "archify",
+        "diagram-design"
+      ],
+      "license": "MIT AND Apache-2.0"
+    },
+    {
+      "name": "clear-writing",
+      "path": ".agents/skills/clear-writing/SKILL.md",
+      "phase": "documentare",
+      "source_ids": [
+        "humanizer"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "skill-authoring",
+      "path": ".agents/skills/skill-authoring/SKILL.md",
+      "phase": "întreținere",
+      "source_ids": [
+        "anthropic"
+      ],
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "architecture-analysis",
+      "path": ".agents/skills/architecture-analysis/SKILL.md",
+      "phase": "investigare",
+      "source_ids": [
+        "rea",
+        "matt"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

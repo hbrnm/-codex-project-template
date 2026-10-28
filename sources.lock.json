@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-28",
+  "review_scope": "README, structură și componentele enumerate; fără audit integral, instalare sau validare runtime a proiectelor sursă.",
+  "sources": [
+    {
+      "id": "ecc",
+      "repository": "hbrnm/ECC",
+      "url": "https://github.com/hbrnm/ECC",
+      "commit": "25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "AGENTS.md",
+        ".agents/skills/coding-standards/SKILL.md",
+        ".agents/skills/tdd-workflow/SKILL.md",
+        ".agents/skills/security-review/SKILL.md",
+        ".agents/skills/verification-loop/SKILL.md",
+        "agents/planner.md",
+        "LICENSE"
+      ],
+      "selected": "Baza de securitate, planificare și verificare.",
+      "excluded": "Fără instalare globală sau prag universal de coverage.",
+      "license_files": [
+        "licenses/ECC-MIT.txt"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0 (componente selectate)",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/skill-creator/SKILL.md",
+        "skills/skill-creator/LICENSE.txt",
+        "skills/frontend-design/SKILL.md",
+        "skills/frontend-design/LICENSE.txt"
+      ],
+      "selected": "Structura skillurilor, evaluarea lor și designul intenționat.",
+      "excluded": "Fără skillurile documentare source-available sau scripturi Claude.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md",
+        "licenses/Apache-2.0.txt"
+      ]
+    },
+    {
+      "id": "rea",
+      "repository": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "commit": "06d1247836b1fc856c4a6ec29e2c81927f445dd9",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        ".agents/skills/reverse-engineer-anything/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Analiză din dovezi și separarea sursei de comportamentul livrat.",
+      "excluded": "REA și motoarele native rămân opționale.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "ponytail",
+      "repository": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/ponytail/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Cea mai mică schimbare completă, cu reutilizarea proiectului.",
+      "excluded": "Fără personalitate persistentă sau minimalism care elimină cerințe.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "addy",
+      "repository": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/debugging-and-error-recovery/SKILL.md",
+        "skills/documentation-and-adrs/SKILL.md",
+        "skills/code-review-and-quality/SKILL.md",
+        "skills/source-driven-development/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Depanare, review multidimensional, surse oficiale și ADR.",
+      "excluded": "Fără proces obligatoriu amplu pentru orice editare.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "paperclip",
+      "repository": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "commit": "cff331f6ca0a652b5e41641c68dfa5fa584c22ae",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "LICENSE"
+      ],
+      "selected": "Obiective, responsabilitate, stări și dovezi pentru sarcini.",
+      "excluded": "Aplicația completă, serverul și agenții permanenți nu sunt instalați.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "open-design",
+      "repository": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "commit": "d297055b83b6226c2c5e40800bbb4287156c4025",
+      "license": "Apache-2.0",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/design-brief/SKILL.md",
+        "skills/reference-design-contract/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Brief vizual și separarea referințelor de deciziile de design.",
+      "excluded": "Fără aplicația completă sau cataloagele sale de active.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md",
+        "licenses/Apache-2.0.txt"
+      ]
+    },
+    {
+      "id": "taste",
+      "repository": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "commit": "12af471f627f866411b4bd785b19646d3672784c",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/taste-skill/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Design potrivit subiectului, distincția pagină/ecran și review pe mobil.",
+      "excluded": "Fără motorul de stil, scripturile Node sau estetica impusă global.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "archify",
+      "repository": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "commit": "d6059331abbddb49bca380ff46dca8ce33158b04",
+      "license": "Apache-2.0",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "archify/SKILL.md",
+        "LICENSE",
+        "NOTICE",
+        "archify/NOTICE"
+      ],
+      "selected": "Diagrame bazate pe dovezi și alegerea tipului potrivit.",
+      "excluded": "Fără renderer, șabloane ori generare HTML la fiecare răspuns.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md",
+        "licenses/Apache-2.0.txt"
+      ]
+    },
+    {
+      "id": "composio",
+      "repository": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "license": "Apache-2.0 declarat în README; componente eterogene",
+      "disposition": "reference_only",
+      "reviewed_files": [
+        "README.md"
+      ],
+      "selected": "Catalog pentru descoperirea integrărilor concrete.",
+      "excluded": "Nu copiem catalogul și nu instalăm gateway-uri automat.",
+      "license_files": []
+    },
+    {
+      "id": "diagram-design",
+      "repository": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "commit": "0cf73c3fcc56667ad91a9a04c439ac6ccfabc9d1",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/diagram-design/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Claritate semantică, etichete și artefacte autonome când sunt utile.",
+      "excluded": "Fără obligativitate HTML/SVG sau restricții estetice universale.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "humanizer",
+      "repository": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "commit": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Redactare clară și păstrarea faptelor și a vocii autorului.",
+      "excluded": "Fără exemplele sursei, promisiuni despre detectoare sau rescriere de cod.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "awesome-code",
+      "repository": "hesreallyhim/awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "commit": "e0351d1a1fa569ffe57ac1859ba5c100c848496f",
+      "license": "CC-BY-NC-ND-4.0",
+      "disposition": "reference_only",
+      "reviewed_files": [
+        "README.md",
+        "LICENSE"
+      ],
+      "selected": "Referință externă pentru descoperirea resurselor.",
+      "excluded": "Lista nu este copiată, tradusă sau adaptată.",
+      "license_files": []
+    },
+    {
+      "id": "matt",
+      "repository": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "license": "MIT",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "skills/engineering/tdd/SKILL.md",
+        "skills/engineering/to-spec/SKILL.md",
+        "skills/productivity/handoff/SKILL.md",
+        "LICENSE"
+      ],
+      "selected": "Teste la interfețe publice, pași verticali și handoff fără duplicare.",
+      "excluded": "Fără publicare automată de issue-uri sau confirmări de rutină repetate.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md"
+      ]
+    },
+    {
+      "id": "llm-apps",
+      "repository": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+      "license": "Apache-2.0 pentru scope-creep-detector; exemplele se verifică separat",
+      "disposition": "adapted",
+      "reviewed_files": [
+        "README.md",
+        "agent_skills/scope-creep-detector/SKILL.md",
+        "rag_tutorials/knowledge_graph_rag_citations/README.md",
+        "LICENSE"
+      ],
+      "selected": "Controlul scopului unui diff; exemple AI păstrate ca referințe.",
+      "excluded": "Fără copierea aplicațiilor, chei, modele sau servicii impuse.",
+      "license_files": [
+        "THIRD-PARTY-NOTICES.md",
+        "licenses/Apache-2.0.txt"
+      ]
+    }
+  ]
+}

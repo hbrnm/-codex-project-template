@@ -1,32 +1,33 @@
 ---
 name: tdd-workflow
-description: "Folosește pentru logică nouă, remedierea bugurilor și schimbări de comportament care pot fi verificate prin teste."
-license: MIT
+description: "Folosește pentru logică nouă, buguri și schimbări de comportament verificabile prin teste."
+license: "MIT"
 ---
 
-# Dezvoltare ghidată de teste
+# Teste pe comportament
 
-Adaptare din ECC; vezi [proveniența](../../../docs/ECC-SOURCE.md).
+Adaptare modificată în română, 2026-10-28. Surse: ecc, matt, ponytail.
+Vezi [proveniența și licențele](../../../docs/SOURCES.md).
+Se aplică [politica comună](../../../AGENTS.md); acest skill nu o înlocuiește.
 
-1. Identifică test runner-ul și comanda reală din documentație și configurație.
-   Nu presupune npm, Jest, Playwright sau un script ECC absent.
-2. Transformă cerința într-un comportament observabil. Pentru un bug,
-   construiește un caz de regresie care reproduce cauza.
-3. Scrie testul și execută-l înaintea remedierii, când este practic.
-4. Confirmă că eșuează din cauza comportamentului vizat, nu din cauza
-   dependențelor lipsă ori a unei configurații greșite.
-5. Implementează modificarea minimă și repetă același test.
-6. Refactorizează păstrând testele verzi. Rulează verificările relevante conexe.
-7. Raportează comanda, rezultatul înainte și după și cazurile neacoperite.
+1. Identifică runner-ul și comanda reală din configurația proiectului.
+2. Alege interfața publică relevantă și un comportament observabil din cerință.
+   Respectă granițele de test existente; nu cere aprobări repetate pentru alegeri de rutină.
+3. Scrie un test mic și execută-l înaintea remedierii, când este practic.
+4. Confirmă că eșuează pentru comportamentul vizat. Dependențele lipsă și o
+   eroare fără legătură nu reprezintă dovadă RED.
+5. Implementează suficient pentru acel test și execută-l din nou.
+6. Continuă vertical: un comportament, testul lui, implementarea lui. Nu scrie
+   dinainte o suită mare pentru interfețe încă imaginare.
+7. Simplifică după GREEN, apoi repetă verificările afectate.
+8. Raportează ce garantează testul, comenzile și rezultatele RED/GREEN reale.
 
-Alege teste unitare pentru logică izolată, integrare pentru granițele sistemului
-și E2E pentru fluxurile esențiale, în funcție de schimbare.
-Testează cazurile de eroare și limitele importante. Izolează datele de test.
+Alege unitare, integrare sau E2E după risc. Verifică erorile și limitele importante.
+Nu testa metode private sau detalii care se schimbă fără efect asupra utilizatorului.
+Valorile așteptate provin din cerință ori exemple independente, nu din repetarea
+algoritmului testat. Mock-urile nu trebuie să ascundă exact granița evaluată.
 
-Respectă pragurile de coverage existente; dacă nu există, propune o țintă
-potrivită după alegerea tehnologiei. Procentul nu înlocuiește verificarea
-comportamentului. Nu dezactiva teste ca să obții un rezultat verde.
-
-Nu crea teste artificiale pentru corecturi simple de text. Dacă mediul nu poate
-rula testele, raportează blocajul și nu pretinde dovezi RED/GREEN.
-Nu crea automat commituri intermediare și nu instala instrumente globale.
+Respectă pragurile de coverage existente. Nu impune 80% tuturor proiectelor și nu
+confunda procentul cu utilitatea testelor. Corecturile simple de text nu cer teste
+artificiale. Dacă execuția este blocată, raportează blocajul. Nu fabrica RED/GREEN
+și nu crea automat commituri intermediare.
