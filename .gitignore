@@ -1,0 +1,13 @@
+# Secrete locale; păstrează exemplele fără valori reale.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Fișiere locale ale sistemului
+.DS_Store
+Thumbs.db
+
+# Adaugă regulile tehnologiei după alegerea ei.
