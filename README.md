@@ -43,6 +43,10 @@ prioritar și instrumente externe opționale.
 Registrul verificabil este [skills.registry.json](skills.registry.json).
 Selectează un skill principal și consultă altele numai când sunt relevante.
 
+## Recomandări comunitare evaluate
+Vezi [comparația cu postarea Reddit](docs/REDDIT-SKILLS-REVIEW.md): ce există deja,
+ce am completat și ce rămâne opțional. Catalogul păstrează 13 skilluri.
+
 ## Documente de proiect
 - [Brief](docs/PROJECT-BRIEF.md): rezultat, utilizatori și criterii de acceptare.
 - [Brief vizual](docs/DESIGN-BRIEF.md): numai pentru proiecte cu UI.
@@ -98,3 +102,4 @@ Vezi [selecția tuturor surselor](docs/SOURCES.md), [commituri și decizii](sour
 și [notificările terților](THIRD-PARTY-NOTICES.md).
 Contribuțiile originale sunt MIT; componentele adaptate își păstrează licențele
 indicate în skilluri și notificări. [Istoricul ECC](docs/ECC-SOURCE.md) rămâne disponibil.
+
