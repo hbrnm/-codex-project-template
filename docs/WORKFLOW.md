@@ -9,7 +9,7 @@ Un proiect nou sau o schimbare complexă: brief, plan, implementare, review și 
 |---|---|---|
 | Cerințe | requirements | Brief și criterii observabile |
 | Plan | project-planning | Pași mici și dependențe |
-| Înțelegere sistem | architecture-analysis | Concluzii legate de dovezi |
+| Înțelegere sistem | architecture-analysis | Răspuns fără editări, legat de dovezi și istoric disponibil |
 | Bug | debugging | Reproducere, cauză, regresie |
 | Implementare | coding-standards | Schimbare minimă completă |
 | Teste de comportament | tdd-workflow | Dovezi RED/GREEN când sunt posibile |
@@ -46,3 +46,4 @@ Nu duplica specificații și loguri: folosește linkuri și păstrează faptele 
 - Verificările potrivite au rezultate reale și eșecurile sunt rezolvate ori raportate.
 - Datele și permisiunile rămân în limitele cererii.
 - Documentația afectată și contextul necesar continuării sunt actualizate.
+

@@ -21,3 +21,18 @@ Se aplică [politica comună](../../../AGENTS.md); acest skill nu o înlocuieșt
 
 Rezultat: brief proporțional cu sarcina, criterii de acceptare și întrebări deschise.
 Nu transforma fiecare funcție mică într-o specificație mare.
+
+## Cercetare înainte de decizii
+Înainte să întrebi utilizatorul, caută răspunsurile în brief, cod și documentația
+disponibilă. Pentru o presupunere externă care poate schimba produsul, verifică
+sursa oficială relevantă: capabilități API, limite, costuri sau constrângeri.
+Păstrează URL-ul și data verificării; separă faptul verificat de ipoteză.
+Dacă nu ai acces, declară informația neconfirmată și impactul asupra planului.
+Nu transforma o alegere reversibilă într-o cercetare exhaustivă.
+
+Întreabă numai ce schimbă scopul, criteriile, datele, costurile sau o decizie
+greu de inversat. Dacă utilizatorul cere un PRD, folosește brief-ul existent și
+adaugă numai detaliile necesare: fluxuri, cerințe, limite, criterii și întrebări
+deschise. O cerere doar de explorare sau PRD nu autorizează implementarea;
+predă planificării când cererea include și construirea produsului.
+
