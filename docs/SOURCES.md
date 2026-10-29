@@ -54,3 +54,10 @@ materialele MIT și/sau Apache-2.0 pe care le adaptează.
 6. Păstrează istoricul și o cale de revenire.
 
 Proiectele create din template nu primesc automat actualizările acestuia.
+
+
+## Completări la 2026-10-29
+Sursa Anthropic frontend-design a fost recitită la commitul deja fixat;
+[comparația](FRONTEND-DESIGN-REVIEW.md) consemnează completările ui-design.
+Instrucțiunile despre browser, evaluări AI și profilul tehnologiei sunt contribuții
+originale ale template-ului, sub licența MIT a proiectului. Nu importă alte pachete.

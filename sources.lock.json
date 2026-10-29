@@ -39,12 +39,13 @@
         "skills/frontend-design/SKILL.md",
         "skills/frontend-design/LICENSE.txt"
       ],
-      "selected": "Structura skillurilor, evaluarea lor și designul intenționat.",
+      "selected": "Structura skillurilor, evaluarea lor și designul intenționat; completări ui-design pentru tokenuri, plan înainte de cod și vocabular consecvent în interfață.",
       "excluded": "Fără skillurile documentare source-available sau scripturi Claude.",
       "license_files": [
         "THIRD-PARTY-NOTICES.md",
         "licenses/Apache-2.0.txt"
-      ]
+      ],
+      "follow_up_review_date": "2026-10-29"
     },
     {
       "id": "rea",
