@@ -19,6 +19,8 @@ Se aplică [politica comună](../../../AGENTS.md); acest skill nu o înlocuieșt
    Păstrează codul de ieșire real; nu ascunde eșecuri prin pipeline-uri de afișare.
 5. Verifică fluxul UI/API afectat când mediul permite; inspectarea codului nu
    este echivalentă cu execuția în browser sau cu o tranzacție completă.
+   Pentru aplicații web urmează [verificarea în browser](../../../docs/BROWSER-VERIFICATION.md).
+   Pentru modificări ale funcțiilor AI urmează [evaluarea AI](../../../docs/AI-EVALUATION.md).
 6. Aplică review-ul și verificările de securitate relevante.
 7. Remediază eșecurile cauzate de schimbare și repetă verificările afectate.
 8. Raportează fiecare verificare: metoda sau comanda, rezultatul și limita.
@@ -29,3 +31,7 @@ proveniența și linkurile cu python3 scripts/validate_template.py.
 Build-ul și testele aplicației nu se aplică până la alegerea tehnologiei.
 Descoperirea nativă a skillurilor se confirmă separat într-o sesiune Codex;
 validarea fișierelor nu demonstrează comportamentul agentului.
+
+Selectează verificările după [tehnologia proiectului](../../../docs/STACK-PROFILE.md).
+Nu rula evaluări AI pentru aplicații fără AI sau teste de browser pentru proză.
+

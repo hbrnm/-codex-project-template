@@ -30,3 +30,22 @@ Nu există interdicții universale asupra cardurilor, umbrelor, fonturilor,
 gradientelor sau Mermaid. Cererea și sistemul vizual al proiectului decid.
 Nu copia logo-uri și alte elemente protejate din referințe fără drepturi.
 Nu presupune existența scripturilor Taste, a browserului ori a OpenDesign.
+
+## De la brief la ecran
+Pentru UI nou sau redesign semnificativ, schițează înainte de cod un plan compact:
+culori și roluri, familii și scară tipografică, spațiere, aliniere și compoziție.
+Reutilizează tokenurile existente; pentru un proiect nou definește valori concrete.
+Verifică planul față de brief și corectează alegerile care nu au o justificare
+în conținut ori în nevoile publicului. Nu cere o aprobare suplimentară pentru
+alegeri reversibile deja autorizate și nu impune acest pas unei corecturi mici.
+
+Tipografia trebuie să păstreze o ierarhie lizibilă și lungimi de rând potrivite.
+Numerotarea exprimă o ordine reală; animația explică o schimbare sau atrage
+atenția justificat. Verifică suprascrierile CSS care anulează spațierea intenționată.
+Numește acțiunile concret și consecvent între buton și confirmare. Pentru eroare
+spune ce s-a întâmplat și ce poate face utilizatorul; pentru starea goală indică
+următorul pas. Evită termenii de implementare în interfața utilizatorului.
+
+Compară capturile cu brief-ul când ai browser; păstrează dovezile și limitele
+conform [procedurii de verificare](../../../docs/BROWSER-VERIFICATION.md).
+

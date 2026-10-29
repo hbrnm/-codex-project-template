@@ -47,3 +47,9 @@ Nu duplica specificații și loguri: folosește linkuri și păstrează faptele 
 - Datele și permisiunile rămân în limitele cererii.
 - Documentația afectată și contextul necesar continuării sunt actualizate.
 
+
+## Proceduri specifice proiectului
+După alegerea tehnologiei folosește [profilul proiectului](STACK-PROFILE.md).
+verification-loop conduce [verificarea web](BROWSER-VERIFICATION.md) și, când
+funcția folosește modele, [evaluarea AI](AI-EVALUATION.md). Aceste proceduri nu
+înlocuiesc testele comportamentale sau deciziile vizuale din ui-design.

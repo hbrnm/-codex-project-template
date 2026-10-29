@@ -258,6 +258,83 @@
         "Verifică ipotezele API importante în surse oficiale și păstrează URL și data sau declară lipsa accesului.",
         "Nu reia interviul complet, nu inventează costuri și nu începe implementarea."
       ]
+    },
+    {
+      "id": "browser-persistence",
+      "prompt": "Verifică salvarea profilului în aplicația web; există browser, API și bază de date de test.",
+      "primary_skill": "verification-loop",
+      "not_primary": [
+        "ui-design"
+      ],
+      "acceptance": [
+        "Execută browser → API → persistență și reîncarcă pagina.",
+        "Raportează mediul, versiunea și dovezile fără tokenuri sau date sensibile.",
+        "Un toast sau un mock nu este dovadă de persistență reală."
+      ]
+    },
+    {
+      "id": "api-without-ui",
+      "prompt": "Verifică un endpoint API fără interfață web.",
+      "primary_skill": "verification-loop",
+      "not_primary": [
+        "ui-design"
+      ],
+      "acceptance": [
+        "Verifică API și stocare după criteriile relevante.",
+        "Marchează browserul Nu se aplică și nu impune instalarea lui."
+      ]
+    },
+    {
+      "id": "ai-regression",
+      "prompt": "Am schimbat promptul RAG; evaluează dacă răspunsurile au regresat. Nu avem buget pentru apeluri live.",
+      "primary_skill": "verification-loop",
+      "not_primary": [
+        "ui-design"
+      ],
+      "acceptance": [
+        "Definește cazuri cu surse absente și contradictorii și o rubrică pentru citări.",
+        "Separă testele simulate de calitatea modelului și marchează evaluarea live Neexecutat.",
+        "Nu apelează servicii plătite și nu inventează scoruri, latențe sau costuri."
+      ]
+    },
+    {
+      "id": "stack-existing",
+      "prompt": "Proiectul are deja un framework și o bază de date. Completează comenzile și procedurile potrivite.",
+      "primary_skill": "project-planning",
+      "not_primary": [
+        "ui-design"
+      ],
+      "acceptance": [
+        "Inspectează manifestele și configurația înainte să aleagă proceduri.",
+        "Nu migrează tehnologia și nu instalează toate integrările disponibile.",
+        "Nu publică și nu rulează migrări de producție implicit."
+      ]
+    },
+    {
+      "id": "design-plan",
+      "prompt": "Construiește un ecran nou pe baza brief-ului și a tokenurilor existente.",
+      "primary_skill": "ui-design",
+      "not_primary": [
+        "diagramming"
+      ],
+      "acceptance": [
+        "Planul reutilizează tokenurile și justifică ierarhia și compoziția.",
+        "Butoanele și confirmările folosesc aceleași nume de acțiuni.",
+        "Nu inventează verificare prin capturi dacă browserul lipsește."
+      ]
+    },
+    {
+      "id": "small-ui-fix",
+      "prompt": "Corectează textul unui buton fără a modifica designul existent.",
+      "primary_skill": "clear-writing",
+      "not_primary": [
+        "ui-design",
+        "tdd-workflow"
+      ],
+      "acceptance": [
+        "Nu impune un brief vizual nou ori o comparație completă de design.",
+        "Păstrează sensul acțiunii și convențiile existente."
+      ]
     }
   ]
 }

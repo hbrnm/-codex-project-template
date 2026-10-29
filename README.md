@@ -82,6 +82,14 @@ Formatul SKILL.md nu garantează descoperirea în fiecare interfață.
 Citirea explicită este alternativa manuală; nu dovedește instalarea unui plugin.
 Template-ul nu activează MCP, hookuri, subagenți, servicii sau programări.
 
+## Proceduri după tipul proiectului
+- [Flux complet în browser](docs/BROWSER-VERIFICATION.md): UI, API și persistență, cu dovezi.
+- [Evaluarea funcțiilor AI](docs/AI-EVALUATION.md): regresii, citări, latență și costuri.
+- [Alegerea procedurilor după tehnologie](docs/STACK-PROFILE.md): versiuni și comenzi reale.
+- [Comparația cu Anthropic frontend-design](docs/FRONTEND-DESIGN-REVIEW.md): acoperire și limite.
+
+Acestea extind skillurile existente; nu instalează aplicații ori instrumente.
+
 ## Comenzi ale viitoarei aplicații
 Acestea sunt separate de comenzile validatorului de template.
 
